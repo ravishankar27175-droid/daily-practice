@@ -1,0 +1,56 @@
+// question1 Q1 — Variables & Input
+// Write a Python program that takes your name and age as input and prints:
+Hello Ravi! You are 18 years old.
+name=input("enter ur name:")
+age=int(input("enter ur age:"))
+print(f"hello {name}! you are {age} years old")
+
+
+//   ✅ Q2 — Conditionals
+// Write a program that takes a number as input and prints:
+
+// Positive if greater than 0
+// Negative if less than 0
+// Zero if it's 0
+a=int(input("enter a number between 1 to 100:"))
+
+if a>0:
+    print(f"entered number {a} is positive")
+elif a<0:
+    print(f"entered number {a} is negative")
+else :
+    print(f"entered number {a} is zero")  
+
+      // ✅ Q3 — Loop
+// Write a program to print all even numbers from 1 to 20 using a loop
+for i in range(1,21):
+    if i%2==0: 
+        print(f"even numbers are {i}")
+    # else:
+        # print(f"odd numbers are{i}")
+# print(i)  
+
+
+// ✅ Q4 — Loop + Condition
+// Write a program that prints the multiplication table of any number entered by the user.
+a=int(input("enter a number"))
+for i in range(1,11):
+         print(f"{a} X {i} ={a*i}")
+print()      
+
+// One last question left Ravi — Q5! 🔥
+// This is the FizzBuzz problem — one of the most famous coding interview questions in the world! Crack it and Day 1 is DONE
+a=int(input("enter a number:"))
+
+if a%3==0 and a%5==0:
+    print("BuzzFizz  divisible by both 5 and 3")
+elif a%3==0:
+    print("Buzz Divisible by 3")
+elif a%5==0:
+    print("Fizz divisible by 5")
+else:
+    print("not divisible by 3 and 5")      
+
+
+
+
