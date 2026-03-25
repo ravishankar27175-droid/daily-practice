@@ -1,0 +1,30 @@
+// factorial question
+n=int(input("enter a number"))
+
+def factorial(n):
+    if n==0:
+        return 1
+    else:
+        return n*factorial(n-1)
+    
+print(f"the factorial of {n} is {factorial(n)}")        
+factorial(n)        
+
+
+
+  // fibonacci series
+          n=int(input("enter a number"))  
+
+def fibo(x):
+    a=0
+    b=1
+    print("the fibonnaci series is")
+    for i in range(x):
+      print(a)
+      c=a+b
+      a=b
+      b=c
+    
+
+fibo(n)
+          
