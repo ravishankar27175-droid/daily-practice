@@ -1,0 +1,80 @@
+// ✅ Q1 — List Basics
+// Create a list of 5 student names and print each name using a loop..
+
+students_name=["ravi","rahul","rakesh","lohith","kiran"]
+
+ for name in students_name:
+    print(name)
+
+
+//   ✅ Q2 — List Operations
+// Create a list of 5 numbers, then:
+
+// Print the largest number
+// Print the smallest number
+// Print the sum of all numbers
+  numbers=[1,2,3,4,5,7,8,9,100,1000]
+
+print(max(numbers))
+
+print(min(numbers))
+
+print(sum(numbers))
+
+//   ✅ Q3 — List Methods
+// Create a list of 5 fruits, then:
+
+// Add a new fruit
+// Remove one fruit
+// Print the final list
+
+fruits=["apple","mango","grapes","kiwi","dragonfruit"]
+
+
+fruits.append("jackfruit")
+
+fruits.insert(1,"bananna")
+
+fruits.pop()
+fruits.remove('mango')
+
+print(fruits)
+
+
+//   ✅ Q4 — Tuples
+// Create a tuple of 5 cities in India and:
+
+// Print the first and last city
+// Print the total number of cities
+// Try to change one value and see what happens 👀
+  cities=("banglore","chennai","hyderabad","delhi","pune")
+
+
+print(cities[0],"first city")
+print(cities[4],"last city")
+
+cities[0]="mumbai"
+print(len(cities),"is the no of cities")
+
+
+
+//   ✅ Q5 — Challenge 🔥
+// Take 5 numbers as input from the user, store them in a list, and print:
+
+// All numbers greater than 10
+// The average of all 5 numbers
+  # Step 1 — Take input
+numbers = []
+for i in range(5):
+    a = int(input("Enter a number: "))
+    numbers.append(a)
+
+# Step 2 — Print numbers greater than 10
+print("Numbers greater than 10:")
+for num in numbers:
+    if num>10:        # your condition here
+        print(num)
+
+# Step 3 — Average
+average = sum(numbers) / len(numbers ) # fill this yourself
+print(f"Average is {average}")
